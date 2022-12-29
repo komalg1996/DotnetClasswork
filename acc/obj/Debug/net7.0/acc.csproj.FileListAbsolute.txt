@@ -1,0 +1,15 @@
+G:\dotnet1\acc\bin\Debug\net7.0\acc.exe
+G:\dotnet1\acc\bin\Debug\net7.0\acc.deps.json
+G:\dotnet1\acc\bin\Debug\net7.0\acc.runtimeconfig.json
+G:\dotnet1\acc\bin\Debug\net7.0\acc.dll
+G:\dotnet1\acc\bin\Debug\net7.0\acc.pdb
+G:\dotnet1\acc\obj\Debug\net7.0\acc.csproj.AssemblyReference.cache
+G:\dotnet1\acc\obj\Debug\net7.0\acc.GeneratedMSBuildEditorConfig.editorconfig
+G:\dotnet1\acc\obj\Debug\net7.0\acc.AssemblyInfoInputs.cache
+G:\dotnet1\acc\obj\Debug\net7.0\acc.AssemblyInfo.cs
+G:\dotnet1\acc\obj\Debug\net7.0\acc.csproj.CoreCompileInputs.cache
+G:\dotnet1\acc\obj\Debug\net7.0\acc.dll
+G:\dotnet1\acc\obj\Debug\net7.0\refint\acc.dll
+G:\dotnet1\acc\obj\Debug\net7.0\acc.pdb
+G:\dotnet1\acc\obj\Debug\net7.0\acc.genruntimeconfig.cache
+G:\dotnet1\acc\obj\Debug\net7.0\ref\acc.dll
