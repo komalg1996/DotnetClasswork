@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Project Management System</h1>
+    <ol><h3><b>Project Types</b></h3>
+        <li>Education Project</li>
+        <li>ECommerce Project</li>
+        <li>Management Project</li>
+        <li>Security Project</li>
+    </ol>
+    @{
+        List<string> edu = new List<string>();
+        edu.Add("School");
+        edu.Add("Library");
+        edu.Add("College");
+        edu.Add("Hostel");
+
+
+        <ol><h3><b><i>Project List</i></b></h3>
+            @foreach (string education in edu)
+            {
+                <li>@education</li>
+            }
+        </ol>
+
+        <img src="images/school-management.jpg" height="100px" width="100px"/>
+        <img src="images/lms.jpg" height="100px" width="100px"/>
+        <img src="images/colg.jpg" height="100px" width="100px"/>
+        <img src='images/Hostel.jpg' height="100px" width="100px"/>
+    }
+
+</div>

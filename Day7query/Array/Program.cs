@@ -2,12 +2,15 @@
 
 List<Student> dac = new List<Student>();
 dac.Add(new Student { StudentID = 1, Name = "Manish", Age = 20 });
-dac.Add(new Student { StudentID = 1, Name = "Komal", Age = 25 });
-dac.Add(new Student { StudentID = 1, Name = "Ashwini", Age = 26 });
-dac.Add(new Student { StudentID = 1, Name = "Bhavesh", Age = 30 });
+dac.Add(new Student { StudentID = 2, Name = "Komal", Age = 25 });
+dac.Add(new Student { StudentID = 3, Name = "Ashwini", Age = 26 });
+dac.Add(new Student { StudentID = 4, Name = "Bhavesh", Age = 30 });
+dac.Add(new Student { StudentID = 5, Name = "Meena", Age = 28 });
+dac.Add(new Student { StudentID = 6 , Name = "Reena", Age = 27 });
+
 
 var std= from stud in dac 
-            where stud.Age>25 && stud.Age<30 
+            where Name like  "^M"
             select stud;
 
 foreach(Student s in std){
