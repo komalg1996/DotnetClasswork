@@ -43,10 +43,11 @@ List<Customer> cus=new List<Customer>(10);
 var options=new JsonSerializerOptions{IncludeFields=true};
 var customerJson=JsonSerializer.Serialize<List<Customer>>(cus,options);
 string fileName=@"G:\myfile\project.json";
-
 System.IO.File.WriteAllText(fileName,customerJson);
+
+
     //     if(email =="komalg@g.com" &&  password=="koko"){
-    //         if(email==Console.ReadLine() &&  password == Console.ReadLine()){
+    //         if(email== komalg@g.com &&  password ==koko ){
     //          Console.WriteLine("successfull validation of user..... ");
     //          Console.WriteLine("Redirecting to welcome..... ");   
     //         return Redirect("/home/Welcome");
