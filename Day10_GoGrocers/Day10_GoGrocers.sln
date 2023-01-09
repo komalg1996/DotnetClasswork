@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoGrocersWeb", "GoGrocersWeb\GoGrocersWeb.csproj", "{A1F53F4E-AA26-48BA-88F9-976B11BB8EAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOL", "BOL\BOL.csproj", "{90A5BEED-49C9-419F-B0B4-05C22E45BB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{A3C03AB9-A3AC-4D93-BEB0-74FCD3605645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{D5354FE2-C301-4E6A-B4D6-D57BCCF3A4DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1F53F4E-AA26-48BA-88F9-976B11BB8EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F53F4E-AA26-48BA-88F9-976B11BB8EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F53F4E-AA26-48BA-88F9-976B11BB8EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F53F4E-AA26-48BA-88F9-976B11BB8EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A5BEED-49C9-419F-B0B4-05C22E45BB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A5BEED-49C9-419F-B0B4-05C22E45BB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A5BEED-49C9-419F-B0B4-05C22E45BB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A5BEED-49C9-419F-B0B4-05C22E45BB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C03AB9-A3AC-4D93-BEB0-74FCD3605645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C03AB9-A3AC-4D93-BEB0-74FCD3605645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C03AB9-A3AC-4D93-BEB0-74FCD3605645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C03AB9-A3AC-4D93-BEB0-74FCD3605645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5354FE2-C301-4E6A-B4D6-D57BCCF3A4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5354FE2-C301-4E6A-B4D6-D57BCCF3A4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5354FE2-C301-4E6A-B4D6-D57BCCF3A4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5354FE2-C301-4E6A-B4D6-D57BCCF3A4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

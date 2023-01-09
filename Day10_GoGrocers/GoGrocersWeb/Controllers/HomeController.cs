@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using GoGrocers.Models;
+using GoGrocersWeb.Models;
 
-namespace GoGrocers.Controllers;
+namespace GoGrocersWeb.Controllers;
 
 public class HomeController : Controller
 {
@@ -19,10 +19,6 @@ public class HomeController : Controller
     }
 
     public IActionResult Privacy()
-    {
-        return View();
-    }
-    public IActionResult About()
     {
         return View();
     }
