@@ -2,7 +2,7 @@
 
 public class CatalogManager
 {
-    public List<Product> GetAllProduct(){
+    public static List<Product> GetAllProduct(){
         List<Product> allproducts=new List<Product>();
         allproducts=DBManager.GetAllProduct();
         return allproducts;
