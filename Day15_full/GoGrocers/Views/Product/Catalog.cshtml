@@ -7,7 +7,11 @@
     List<Product> products= (List<Product>)ViewData["products"];
         <ol>
             @foreach(Product product in products){
-                <li><a href="/Product/details/@product.Id">@product.Name</a></li>
+                <li>
+                    <a href="/Product/details/@product.Id">@product.Name</a>
+                    <button><a href="/Product/Delete/@product.Id">Delete</a></button>
+                    <button><a href="/Product/Update/@product.Id">Update</a></button>
+                </li>
         }
         </ol>
 }

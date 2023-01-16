@@ -37,21 +37,33 @@ public class ProductController : Controller
     }
 
     [HttpPost]
-    public IActionResult Insert(string name, string Category, double Price, string Date)
+    public IActionResult Insert(int id,string name, string Category, double Price, string Date)
     {
         ProductManager mgr = new ProductManager();
-        bool ans = mgr.insert(name, Category, Price, Date);
+        bool ans = mgr.insert(id,name, Category, Price, Date);
         if (ans)
             return Redirect("/Home");
         return View();
     }
 
+public IActionResult Update(int id)
+{
+    return View();
+}
 
-    public IActionResult Update(int id){
+    [HttpPost]
+    public IActionResult Update(int id,string name, string category, double Price, string expdate){
         ProductManager mgr=new ProductManager();
-        bool ans = mgr.Update(id);
-        if(ans)
-        return Redirect("/Auth/Catalog");
-        return RedirectToAction("Index");
+        mgr.Update(id,name,category,Price,expdate);
+       return Redirect("Catalog");
+       
     }
+
+    public IActionResult Delete(int id){
+        ProductManager mgr=new ProductManager();
+        mgr.Delete(id);
+        // return Redirect("Product/Catalog");
+        return RedirectToAction("Catalog");
+    }
+
 }

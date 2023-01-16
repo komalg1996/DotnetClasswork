@@ -57,7 +57,7 @@ public class ProductManagerDAL
         return null;
     }
 
-    public static bool insert(string name, string category, double unitprice, string expdate)
+    public static bool insert(int id,string name, string category, double unitprice, string expdate)
     {
         //db connection
         MySqlConnection con = new MySqlConnection();
@@ -67,9 +67,9 @@ public class ProductManagerDAL
         try
         {
             con.Open();
-            string querry = "insert into products(Name,Category,UnitPrice,ExpDate) values('" + name + "','" + category + "','" + unitprice + "','" + expdate + "')";
+            string querry = "insert into products(Id,Name,Category,UnitPrice,ExpDate) values('" + id + "','" + name + "','" + category + "','" + unitprice + "','" + expdate + "')";
 
-            MySqlCommand cmd=new MySqlCommand(querry,con);
+            MySqlCommand cmd = new MySqlCommand(querry, con);
             cmd.ExecuteNonQuery();
             ans = true;
         }
@@ -85,23 +85,49 @@ public class ProductManagerDAL
 
     }
 
-    
-    public static bool Update(int id){
-        MySqlConnection con=new MySqlConnection();
-        con.ConnectionString=conpath;
-        bool status=false;
-        try{
+
+    public static void Update(int id, string name, string category, double Price, string Date)
+    {
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = conpath;
+        try
+        {
             con.Open();
-            string querry="update product set Name='Sunfeast', Category='Biscuit', UnitPrice=30, ExpDate='2024-08-09' where id=id";
-            MySqlCommand cmd=new MySqlCommand(querry,con);
+            string querry = "update products set Name='" + name + "', Category='" + category + "', UnitPrice='" + Price + "', ExpDate='" + Date + "' where Id=" + id;
+            MySqlCommand cmd = new MySqlCommand(querry, con);
             cmd.ExecuteNonQuery();
-            status = true;
-        }catch (Exception e){
+        }
+        catch (Exception e)
+        {
             Console.WriteLine(e.Message);
-        }finally{
+        }
+        finally
+        {
             con.Close();
         }
-        return true;
+
+    }
+
+    public static void Delete(int id)
+    {
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = conpath;
+        try
+        {
+            con.Open();
+            string querry = "delete from products where id=" + id;
+            MySqlCommand cmd = new MySqlCommand(querry, con);
+            cmd.ExecuteNonQuery();
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            con.Close();
+        }
 
     }
 

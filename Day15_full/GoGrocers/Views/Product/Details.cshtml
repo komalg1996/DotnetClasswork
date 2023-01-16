@@ -3,12 +3,15 @@
     ViewData["Title"] = "Details page";
 }
 
-@{
+<div>
+    @{
     Product product = (Product)ViewData["prod"];
-    <ol>
-        <li>@product.Name</li>
-        <li>@product.UnitPrice</li>
-        <li>@product.ExpDate</li>
-    </ol>
+
+    <p>ID:@product.Id</p>
+    <p>Name:@product.Name</p>
+    <p>Category:@product.Category</p>
+    <p>UnitPrice:@product.UnitPrice</p>
+    <p>ExpDate:@product.ExpDate</p>
 
 }
+</div>
