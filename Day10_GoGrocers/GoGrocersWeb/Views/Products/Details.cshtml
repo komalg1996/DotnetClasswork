@@ -1,16 +1,17 @@
 @using BOL;
-
 @{
-    ViewData["Title"] = "Index Page";
+    ViewData["Title"] = "Product Page";
 }
-
 <div>
     <h2>Product Details</h2>
+
     @{
-        Product theProduct=ViewData["product"] as Product;
-        <p> Id: @theProduct.ProductId</p>
-        <p> Title:  <b> <u></u>@theProduct.Title</b></p>
-
+        Product product = ViewData["product"] as Product;
+        <p>ID : @product.Id</p>
+        <p>Name : @product.Name</p>
+        <p>Category : @product.Catagory</p>
+        <p>UnitPrice : @product.UnitPrice</p>
+        <p>Exp Date : @product.ExpDate</p>
+        <p>Description : @product.Description</p>
     }
-
 </div>

@@ -1,22 +1,20 @@
 ﻿namespace BLL;
-
+using BOL;
+using DAL;
 public class CatalogManager
 {
-    public List<Product> GetAllProduct(){
-        List<Product> allproducts=new List<Product>();
-        allproducts=DBManager.GetAllProduct();
+    public List<Product> GetAllProducts(){
+        List<Product> allProducts=new List<Product>();
+        allProducts= ProductsManager.GetAllProducts();
+        return allProducts;
+    }
+    public Product GetProductByID(int id){
+        Product product=ProductsManager.GetProductByID(id);
+        return product;
+    }
+    public List<Product> GetProductFromFile(){
+        List<Product> allproducts= new List<Product>();
+        allproducts = ProductsManager.GetProductFromFile();
         return allproducts;
     }
-    // public Product GetProduct(int  id){
-    //   List<Product> allProducts=GetAllProducts();
-    //   /*var product=from  p in allProducts
-    //                where p.ProductId ==id
-    //                 select p  ;     
-    // */
-    //    Product foundProduct=allProducts.Find((product)=>product.ProductId == id);
-    //   return foundProduct ;
-//Product findproduct=allproduct.find(product)=>product.productId==id);
-//return foundProduct; 
-
-    //  }
 }

@@ -1,0 +1,14 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Details page";
+}
+
+@{
+    Product product = (Product)ViewData["prod"];
+    <ol>
+        <li>@product.Name</li>
+        <li>@product.UnitPrice</li>
+        <li>@product.ExpDate</li>
+    </ol>
+
+}

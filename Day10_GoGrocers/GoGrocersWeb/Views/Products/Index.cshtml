@@ -9,7 +9,7 @@
         List<Product> allProducts= (List<Product>)ViewData["products"];
         <ol>
             @foreach( Product product in allProducts){
-                <li> <a href="/products/details/@product.ProductId">@product.Name</a></li>
+                <li> <a href="/products/details/@product.ProductId">@product.Id</a></li>
             }    
         </ol>    
     }

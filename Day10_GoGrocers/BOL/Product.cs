@@ -1,100 +1,19 @@
 ﻿namespace BOL;
 public class Product
 {
-
-  private int id;
-    private string title;
-    private string imageURL;
-    private string category;
-    private string description;
-    private float unitPrice;
-    private int balance;
-    private string paymentTerm;
-    private string delivery;
-
-
-     public Product(){
-    }
-
-    public Product(int productId, string title){
-        this.id = productId;
-        this.title = title;
-        
-    }
-
-    public Product(int productId, string title, string brand, string category){
-        this.id = productId;
-        this.title = title;       
-        this.category = category;
-    }
-
-     public Product(int productId, string title, string brand,
-                    string category, float unitPrice, int balance){
-        this.id = productId;
-        this.title = title;
-        this.category = category;
-        this.unitPrice = unitPrice;
-        this.balance = balance;
-    }
-
-    public Product(int productId, string title, string brand, string category,
-                    float unitPrice, 
-                    int balance, string description, string imageURL){
-        this.id = productId;
-        this.title = title;   
-        this.category = category;
-        this.unitPrice = unitPrice;
-        this.balance = balance;
-        this.description = description;
-        this.imageURL = imageURL;
-    }
-
-    //Properties of Product Entity
-
-    public int ProductId{
-        get { return id; }
-        set { id = value; }
-    }
+    public int Id{get;set;}
+    public string Name{get;set;}
+    public string Catagory{get;set;}
+    public string Description{get;set;}
+    public double UnitPrice{get;set;}
+    public string ExpDate{get;set;}
     
-    public string Title{
-            get { return title; }
-            set { title = value; }
+    public Product(int id,string name,string catagory,string description,double unitPrice,string expDate){
+        this.Id=id;
+        this.Name=name;
+        this.Catagory=catagory;
+        this.Description=description;
+        this.UnitPrice=unitPrice;
+        this.ExpDate=expDate;
     }
-
-
-    public string Category{
-        get { return category; }
-        set { category = value; }
-    }
-        
-    public string Description{
-        get { return description; }
-        set { description = value; }
-    }
-
-    
-    public string PaymentTerm{
-        get { return paymentTerm;}
-        set { paymentTerm = value; }
-    }
-
-    public string Delivery {
-        get{  return delivery;}
-        set{ delivery = value; }
-    }
-
-    public string ImageURL{
-        get  {   return imageURL; }
-        set  { imageURL = value; }
-    }
-
-    public float UnitPrice{
-        get  { return unitPrice; }
-        set  { unitPrice = value; }
-    }
-    
-    public int Balance{
-        get{  return balance; }
-        set{  balance = value;}
-        }
 }

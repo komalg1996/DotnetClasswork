@@ -1,0 +1,24 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Details page";
+}
+
+<div>
+    <h1>Registration</h1>
+    <form method="post" action="Insert">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" />
+        <br></br>
+        <label for="Category">Category</label>
+        <input type="text" name="Category" id="Category" placeholder="Enter Category" />
+        <br></br>
+        <label for="Price">Unit Price</label>
+        <input type="number" name="Price" id="Price" placeholder="Enter Price" />
+        <br></br>
+        <label for="date">Expiry Date</label>
+        <input type="date" name="date" id="date" placeholder="Enter Date" />
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
