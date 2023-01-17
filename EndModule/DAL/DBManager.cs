@@ -9,6 +9,8 @@ public class DBManager
     //connection string
     static string conpath = @"server=localhost;port=3306;user=root;password=Root@12345;database=student";
 
+    static string fpath= @"D:\study1\Dotnet\dotnet_classwork\EndModule\endmodule\wwwroot\database\user.json";
+
     //get all students in list
     public static List<Student> GetAll()
     {

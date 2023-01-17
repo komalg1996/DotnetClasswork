@@ -1,6 +1,5 @@
 namespace DAL;
 using BOL;
-using System.Data;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 public class ProductManagerDAL
