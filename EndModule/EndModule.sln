@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "endmodule", "endmodule\endmodule.csproj", "{8986A734-52A8-4EEC-817D-D3C5BD934E8C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOL", "BOL\BOL.csproj", "{570DB3ED-FD63-4486-BF4F-1DFE519FF9DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F509ED6D-D5E3-40D2-8DBC-F57C0C76E986}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{2768DAEC-0C25-45BC-B43A-6906764B9D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "endmodule", "endmodule\endmodule.csproj", "{C1FC1E59-71C3-4895-8398-C0BF7349A2EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +36,9 @@ Global
 		{2768DAEC-0C25-45BC-B43A-6906764B9D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2768DAEC-0C25-45BC-B43A-6906764B9D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2768DAEC-0C25-45BC-B43A-6906764B9D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FC1E59-71C3-4895-8398-C0BF7349A2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FC1E59-71C3-4895-8398-C0BF7349A2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FC1E59-71C3-4895-8398-C0BF7349A2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FC1E59-71C3-4895-8398-C0BF7349A2EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

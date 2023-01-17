@@ -1,0 +1,16 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Details page";
+}
+
+<div>
+    @{
+    Student student = (Student)ViewData["stud"];
+
+    <p>Rollno:@student.Rollno</p>
+    <p>Name:@student.Name</p>
+    <p>Email:@student.Email</p>
+    <p>City:@student.City</p>
+    
+}
+</div>

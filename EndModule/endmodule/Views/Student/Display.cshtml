@@ -1,0 +1,17 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Cataloge page";
+}
+@{
+    List<Student> students = (List<Student>)ViewData["student"];
+        <ol>
+            @foreach (Student student in students)
+            {
+            <li>
+                <a href="/Student/StudentDetails/@student.Rollno">@student.Name</a>
+                <button><a href="/Student/Delete/@student.Rollno">Delete</a></button>
+            </li>                
+            }
+        </ol>
+
+} 
